@@ -1,7 +1,7 @@
 # Liberty Commons High School HPE Club
 
-![HPE Logo](https://raw.githubusercontent.com/liberty-linux-programming-club/master/img/logo_hpe.png "HPE logo")
-![Liberty Logo](https://raw.githubusercontent.com/liberty-linux-programming-club/master/img/logo_liberty.png "Liberty Commons High School logo")
+![HPE Logo](https://raw.githubusercontent.com/ptmmrblack/liberty-linux-programming-club/master/img/logo_hpe.png "HPE logo")
+![Liberty Logo](https://raw.githubusercontent.com/ptmmrblack/liberty-linux-programming-club/master/img/logo_liberty.png "Liberty Commons High School logo")
 
 ## Background
 The following repo was produced to help partner between Liberty Commons High School's HPE Club and Hewlett Packard Enterprise employees who wish to help train and setup students for success in possible internships as well as learn more about computing.
