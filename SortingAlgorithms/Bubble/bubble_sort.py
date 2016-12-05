@@ -9,6 +9,7 @@ def bubblize(target):
                     integers, floats, strings...
     :return: [list] sorted target.
     """
+    step = 1
     is_Sorted = False
     while not is_Sorted:
         is_Sorted = True
@@ -16,6 +17,9 @@ def bubblize(target):
             if target[pos] > target[pos + 1]: 
                 swap(target, pos)
                 is_Sorted = False;
+	if (not(is_Sorted)):
+	    print 'step ' + str(step) + ':  %s' % (target)
+	step += 1
     return target
 
 
@@ -32,6 +36,6 @@ def swap(target, curr_pos):
 
 
 origin = [4,7,1,5,2,6,3]
-print "Before: %s" % (origin)
+print "Before:  %s" % (origin)
 bubblize(origin)
-print "After: %s" % (origin)
+print "After:   %s" % (origin)
