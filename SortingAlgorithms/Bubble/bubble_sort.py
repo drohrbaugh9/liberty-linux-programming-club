@@ -1,9 +1,9 @@
 #!/usr/bin/python
-# Bubble sort implementation. Tutorial for Liberty Commons High School HP Club.
+# Bubble sort implementation. Tutorial for Liberty Common High School HP Club.
 
 
 def bubblize(target):
-    """ 
+    """
        Sort list of values using bubble sort technique.
     :param 'target': [list] of any data type that you want to sort,
                     integers, floats, strings...
@@ -14,7 +14,7 @@ def bubblize(target):
     while not is_Sorted:
         is_Sorted = True
         for pos in range(len(target)-1):
-            if target[pos] > target[pos + 1]: 
+            if target[pos] > target[pos + 1]:
                 swap(target, pos)
                 is_Sorted = False;
 	if (not(is_Sorted)):
@@ -24,7 +24,7 @@ def bubblize(target):
 
 
 def swap(target, curr_pos):
-    """ 
+    """
      Swap elements in the 'target' list with current position and the next
     position in the list.
     :param 'target': [list] of elements to swap.
@@ -32,7 +32,7 @@ def swap(target, curr_pos):
     """
     tmp = target[curr_pos]
     target[curr_pos] = target[curr_pos + 1]
-    target[curr_pos + 1] = tmp 
+    target[curr_pos + 1] = tmp
 
 
 origin = [4,7,1,5,2,6,3]
