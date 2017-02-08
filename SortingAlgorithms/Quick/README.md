@@ -11,21 +11,38 @@ Given [2,4,1,3]
 For our exampeles, we will use the first value as the pivot value.  We will also want to track the left most and right most elements after the pivot value and we will know the locaton for the pivot value when the left most and right most elements are the same element.
 
 ##### Step 1: Set comparitor values
+
   `Set pivot = 2`
+
   `Set leftmost_index = 2`
-  `set rightmost_index = 4`
+
+  `Set rightmost_index = 4`
+  
 ##### Step 2: Compare pivot value to the left most value, if the left most value is bigger than the right most value, swap the right and left most values, and move the right most value in one untill the leftmost and right most values cross elements.
+  
   `Compare pivot --> leftmost; 2 < 4 --> swap = [2,3,1,4];  rightmost_index = 3`
+  
   `Compare pivot --> leftmost; 2 < 4 --> swap = [2,1,3,4]; leftmost_index = 2 rightmost_index = 2` 
+  
   `Compare pivot --> leftmost; 2 > 1 --> leftmost_index = 3` 
+  
 ##### Step 4: Now that the right and left index's have crossed, we know that our pivot value goes to leftmost index, swap the pivot value and the value at that point in the list and split the list into pieces.
+
   `Swap pivot --> rightmost_index [1,2,3,4], split L1 = [1] L2 = [3,4]`
   
-##### Step 5: continue until the lists are 1 element:
-  `L1 = [1] --> done`
-  `L2 = [3,4]`
-  `set pivot = 3`
-  `set leftmost_index = 2`
-  `set rightmost = 2`
-  `Compare pivot --> leftmost_index; 3 < 4; rightmost_index = 3`
-  `Split l1 L21 = [3]
+##### Step 5: (End Condition) Repete step 2 until the lists are 2 or fewer elements. In our example the lists are done.  At 2 elements, we can check and sort manually.
+
+  `Compare L2 elements --> 3 < 4; Done`
+  
+##### Step 6: Merge all the lists and the pivot values.
+
+  `Merge L1 and the first pivot --> [1] + [2] = [1,2]`
+  
+  `Merge in L2 --> [1,2] + [3,4] = [1,2,3,4]`
+  
+### Impelementation
+
+  This is being left to the reader for now
+  
+    
+
